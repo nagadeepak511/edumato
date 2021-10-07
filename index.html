@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="code.js"></script>
+        <style>
+            input:focus, textarea:focus, select:focus{
+                outline: none;
+            }
+        </style>
+        <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/3e643419a6.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="logo">e!</div>
+            <div id="header-links">
+                <a href="">Login</a>
+                <a href="" id="createAccount">Create account</a>
+            </div>
+        </header>
+        <div id="content-container">
+            <div id="heading">Best hotels <span id="recommendation"> in Mumbai</span></div>
+            <div id="filter-container-collapse">Filers/Sort</div>
+            <div id="filter-container">
+                <div id="filters-heading">Filters</div>
+                <div class="sub-heading-filters">Select location</div>
+                <select name="" id="filter-location-input" onchange="storeCity()">
+                    <option value="">Select location</option>
+                </select>
+                <div class="sub-heading-filters">Room type</div>
+                <div class="filter-input-container"><input type="checkbox"><span>Deluxe Room</span></div>
+                <div class="filter-input-container"><input type="checkbox"><span>Semi Deluxe Room</span></div>
+                <div class="filter-input-container"><input type="checkbox"><span>Premiere Rooms</span></div>
+                <div class="filter-input-container"><input type="checkbox"><span>Budget Room</span></div>
+                <div class="filter-input-container"><input type="checkbox"><span>Luxury</span></div>
+                
+                <div id="costfortwo" class="sub-heading-filters">Cost for two</div>
+                <div class="filter-input-container"><input type="radio" name="costfortwo"><span>Less than &#8377; 1500</span></div>
+                <div class="filter-input-container"><input type="radio" name="costfortwo"><span>&#8377; 1500 to &#8377; 1800</span></div>
+                <div class="filter-input-container"><input type="radio" name="costfortwo"><span>&#8377; 1800 to &#8377; 11000</span></div>
+                <div class="filter-input-container"><input type="radio" name="costfortwo"><span>&#8377; 11000+</span></div>
+
+                <div id="sort" class="sub-heading-filters">Sort</div>
+                <div class="filter-input-container"><input type="radio" name="sort"><span>Price Low to high</span></div>
+                <div class="filter-input-container"><input type="radio" name="sort"><span>Price High to low</span></div>
+            </div>
+            <div id="top-hotel-container" class="hotel-container">
+                <div class="hotel-image"></div>
+                <div class="hotel-name">The Big Chill Cakery</div>
+                <div class="hotel-fort">FORT</div>
+                <div class="hotel-address">Shop 1, Plot D, Samrudhi complex, Cinchouli</div>
+                <div class="horizontal-line"></div>
+                <div class="hotel-sub-heading">
+                    ROOMTYPES: <br>
+                    COST FOT TWO:
+                </div>
+                <div class="hotel-values">
+                    <span class="hotel-room-type">Bakery</span> <br>
+                    <span class="hotel-ccftwo">&#8377; 700</span>
+                </div>
+            </div>
+            <div class="hotel-container">
+                <div class="hotel-image"></div>
+                <div class="hotel-name">The Big Chill Cakery</div>
+                <div class="hotel-fort">FORT</div>
+                <div class="hotel-address">Shop 1, Plot D, Samrudhi complex, Cinchouli</div>
+                <div class="horizontal-line"></div>
+                <div class="hotel-sub-heading">
+                    ROOMTYPES: <br>
+                    COST FOT TWO:
+                </div>
+                <div class="hotel-values">
+                    <span class="hotel-room-type">Bakery</span> <br>
+                    <span class="hotel-ccftwo">&#8377; 700</span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <button class="nav-box" onclick="changeFocus((findIndex()-2)*2)"><i class="glyphicon glyphicon-chevron-left"></i></button>
+            <button class="nav-box nav-active" onclick="changeFocus(0)">1</button>
+            <button class="nav-box" onclick="changeFocus(2)">2</button>
+            <!-- <button class="nav-box">3</button>
+            <button class="nav-box">4</button>
+            <button class="nav-box">5</button> -->
+            <button class="nav-box" onclick="changeFocus(findIndex()*2)"><i class="glyphicon glyphicon-chevron-right"></i></button>
+        </div>
+        <script>
+            window.onload = showRecommendation;
+        </script>
+    </body>
+</html>

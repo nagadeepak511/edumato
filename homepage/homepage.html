@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="homepageStyle.css">
+        <script src="script.js"></script>
+        <style>
+            input:focus, textarea:focus, select:focus{
+                outline: none;
+            }
+        </style>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/3e643419a6.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-link-container">
+                <a href="" class="header-link">Login</a>
+                <a href="" class="header-link" id="signup">Create an account</a>
+            </div>
+            <div id="logo">
+                <h1 id="brandName">e!</h1>
+            </div>
+            <h1 id="header-description">Find the best Restaurants, Caf&eacute;s and Bars</h1>
+            <div id="header-input-container">
+                <input id="headerInput1" type="text" class="header-input" placeholder="Search for a location">
+                <input id="headerInput2" type="text" class="header-input" placeholder="search a restaurant">
+                <!-- <i id="header-search-icon" class="fas fa-search"></i> -->
+            </div>
+        </header>
+        <div id="content-container">
+            <div id="heading">Quick searches</div>
+            <div id="content-description">Discover restaurants by type of meal</div>
+            <div id="category-container"></div>
+        </div>
+        <script>
+            window.onload = updateImages
+        </script>
+    </body>
+</html>

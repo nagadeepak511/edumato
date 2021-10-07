@@ -1,0 +1,21 @@
+{
+  "name": "edumato",
+  "version": "1.0.0",
+  "description": "Zomato clone using mern stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "zomato",
+    "clone",
+    "mern",
+    "stack"
+  ],
+  "author": "naga",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongo": "^0.1.0"
+  }
+}
