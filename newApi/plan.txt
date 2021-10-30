@@ -1,0 +1,4 @@
+>> Page 1
+    Get all restaurants
+        - wrt location
+            - wrt mealtype
