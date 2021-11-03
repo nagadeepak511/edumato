@@ -1,295 +1,302 @@
-*{
-    margin: auto;
-    font-family: 'Poppins', sans-serif !important;
-    z-index:0;
+* {
+  margin: auto;
+  font-family: "Poppins", sans-serif !important;
+  z-index: 0;
 }
 
-body{
-    width: 100vw !important;
+body {
+  width: 100vw !important;
 }
 
-header{
-    width: 100vw;
-    height: 480px;
-    background-image: url('headerbg.png');
-    background-position: center;
-    background-blend-mode: color-dodge;
+#homeheader {
+  width: 100vw;
+  height: 480px;
+  background-image: url("headerbg.png");
+  background-position: center;
+  background-blend-mode: color-dodge;
 }
 
-.header-link-container{
-    text-align: right;
+.header-link-container {
+  text-align: right;
 }
 
-#signup{
-    margin-right: 115px;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 2px;
+#signup {
+  margin-right: 115px;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 2px;
 }
 
-.header-link{
-    font-size: 16px;
-    color: white;
-    text-decoration: none !important;
-    display: inline-block;
-    margin-top: 29px;
-    margin-left: 30px;
+.header-link {
+  font-size: 16px;
+  color: white;
+  text-decoration: none !important;
+  display: inline-block;
+  margin-top: 29px;
+  margin-left: 30px;
 }
 
-.header-link:hover{
-    color: white !important;
+.header-link:hover {
+  color: white !important;
 }
 
-#logo{
-    background-color: white;
-    height: 147px;
-    width: 147px;
-    border-radius: 50%;
-    margin-top: 18px;
+#logo {
+  background-color: white;
+  height: 147px;
+  width: 147px;
+  border-radius: 50%;
+  margin-top: 18px;
 }
 
-#brandName{
-    text-align: center;
-    font-size: 70px;
-    line-height: 2;
-    font-weight: 800;
-    color: #eb2929;
+#brandName {
+  text-align: center;
+  font-size: 70px;
+  line-height: 2;
+  font-weight: 800;
+  color: #eb2929;
 }
 
-#header-description{
-    text-align: center;
-    color: white;
-    font-size: 36px;
-    font-weight: 600;
-    margin-top: 22px;
+#header-description {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 22px;
 }
 
-#header-input-container{
-    text-align: center;
-    margin-top: 38px;
+#header-input-container {
+  text-align: center;
+  margin-top: 38px;
 }
 
-.header-input{
-    /*height: 60px;*/
-    padding: 23px 21px 21px 18px;
-    font-size: 15px;
-    color: #192f60;
+.header-input {
+  /*height: 60px;*/
+  padding: 23px 21px 21px 18px;
+  font-size: 15px;
+  color: #192f60;
 }
 
-#headerInput1{
-    width: 245px;
-    margin-right: 21px;
+#headerInput1 {
+  width: 245px;
+  margin-right: 21px;
 }
 
-#headerInput2Container{
-    width:519px;
-    display: inline-block;
-    position:relative;
-    z-index:1000;
+#headerInput2Container {
+  width: 519px;
+  display: inline-block;
+  position: relative;
+  z-index: 1000;
 }
 
-#headerInput2{
-    width: 477px;
+#headerInput2 {
+  width: 477px;
 }
 
-#header-search-icon{
-    background: lime;
-    font-size: 50px;
+#header-search-icon {
+  background: lime;
+  font-size: 50px;
 }
 
-#content-container{
-    background-color: #fbfbfb;
-    width: 100%;
+#content-container {
+  background-color: #fbfbfb;
+  width: 100%;
 }
 
-#filterContainer{
-    width: 100%;
-    position: absolute;
-    height:auto;
-    background-color: white;
+#homeheaderfilterContainer {
+  width: 477px;
+  position: absolute;
+  height: auto;
+  background-color: white;
+  margin-left: 21px;
 }
 
-#heading{
-    margin-left: 113px;
-    padding-top: 48px;
-    font-size: 30px;
-    font-weight: 700;
-    color: #192f60;
+#heading {
+  margin-left: 113px;
+  padding-top: 48px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #192f60;
 }
 
-#content-description{
-    margin-left: 113px;
-    color: #8c96ab;
-    font-size: 18px;
-    margin-top: 7px;
+#content-description {
+  margin-left: 113px;
+  color: #8c96ab;
+  font-size: 18px;
+  margin-top: 7px;
 }
 
-#category-container{
-    margin-left: 113px;
-    margin-top: 33px;
-    padding-bottom: 72px;
+#category-container {
+  margin-left: 113px;
+  margin-top: 33px;
+  padding-bottom: 72px;
 }
 
-.category{
-    height: 160px;
-    width: 360px;
-    display: inline-block;
-    box-shadow: 0px 3px 6px 0px rgb(0,0,0, 0.16);
-    margin-right: 30px;
-    margin-bottom: 26px;
-    background-color: white;
-    z-index:0;
+.category {
+  height: 160px;
+  width: 360px;
+  display: inline-block;
+  box-shadow: 0px 3px 6px 0px rgb(0, 0, 0, 0.16);
+  margin-right: 30px;
+  margin-bottom: 26px;
+  background-color: white;
+  z-index: 0;
 }
 
-.category:hover{
-    transform: scale(1.05);
+.category:hover {
+  transform: scale(1.05);
 }
 
-.category-image{
-    height: 160px;
-    width: 160px;
-    background-image: url('breakfast.png');
-    background-position: center;
-    margin:0;
-    display: inline-block;
+.category-image {
+  height: 160px;
+  width: 160px;
+  background-image: url("breakfast.png");
+  background-position: center;
+  margin: 0;
+  display: inline-block;
 }
 
-.category-content-container{
-    display: inline-block;
-    width: 200px;
-    height: 160px;
-    margin: 0;
-    padding-left: 25px;
-    padding-top: 25px;
-    position: absolute;
+.category-content-container {
+  display: inline-block;
+  width: 200px;
+  height: 160px;
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 25px;
+  position: absolute;
 }
 
-.category-name{
-    margin-top: 0;
-    font-size: 18px;
-    color: #192f60;
-    font-weight: 700;
+.category-name {
+  margin-top: 0;
+  font-size: 18px;
+  color: #192f60;
+  font-weight: 700;
 }
-.category-description{
-    font-size: 16px;
-    color: #8c96ab;
-    width: 137px;
-    height: 60px;
-    margin-left: 0;
-    font-weight: 400;
+.category-description {
+  font-size: 16px;
+  color: #8c96ab;
+  width: 137px;
+  height: 60px;
+  margin-left: 0;
+  font-weight: 400;
 }
 
 /* media query */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px) {
+  header {
+    height: 520px;
+  }
 
-    header{
-        height: 400px;
-    }
+  #signup {
+    margin-right: 40px;
+  }
 
-    #signup{
-        margin-right: 40px;
-    }
-    
-    #logo{
-        margin-top: 15px;
-        height: 90px;
-        width: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  #logo {
+    margin-top: 15px;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #brandName{
-        font-size: 40px;
-        line-height: 1;
-        padding: 0;
-        margin:0;
-    }
+  #brandName {
+    font-size: 40px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
 
-    #header-description{
-        font-size: 30px;
-        padding-top: 35px;
-    }
+  #header-description {
+    font-size: 30px;
+    padding-top: 35px;
+  }
 
-    .header-input{
-        height: 50px;
-        padding-top: 20px;
-    }
+  .header-input {
+    height: 50px;
+    padding-top: 20px;
+  }
 
-    #headerInput1{
-        width: 200px;
-    }
+  #headerInput1 {
+    width: 250px;
+    height: auto;
+  }
 
-    #headerInput2{
-        width: 300px;
-    }
+  #headerInput2 {
+    width: 350px;
+    height: auto;
+  }
 
-    #header-input-container{
-        margin-top: 25px;
-    }
+  #filterContainer {
+    width: 385px;
+    margin-left: 65px;
+  }
 
-    #heading{
-        margin-left: 65px;
-    }
+  #header-input-container {
+    margin-top: 25px;
+  }
 
-    #content-description{
-        margin-left: 65px;
-    }
+  #heading {
+    margin-left: 65px;
+  }
 
-    #category-container{
-        margin-left: 65px;
-    }
+  #content-description {
+    margin-left: 65px;
+  }
 
-    .category{
-        width: 315px;
-        height: 150px;
-    }
+  #category-container {
+    margin-left: 65px;
+  }
 
-    .category-image{
-        height: 150px;
-        width: 150px;
-    }
+  .category {
+    width: 315px;
+    height: 150px;
+  }
 
+  .category-image {
+    height: 150px;
+    width: 150px;
+  }
 }
 
-@media screen and (max-width:413px){
-    body, #root{
-        width: 100vw;
-        overflow-x: hidden;
-    }
+@media screen and (max-width: 413px) {
+  body,
+  #root {
+    width: 100vw;
+    overflow-x: hidden !important;
+  }
 
-    header{
-        width: 100vw;
-        height: 512px;
-    }
+  header {
+    width: 100vw;
+    height: 512px;
+  }
 
-    .header-input{
-        width: 200px;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .header-input {
+    width: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #headerInput1{
-        width: 250px;
-        height: auto;
-        margin:auto;
-    }
+  #headerInput1 {
+    width: 250px;
+    height: auto;
+    margin: auto;
+  }
 
-    #headerInput2Contaier{
-        width:300px;
-    }
+  #headerInput2Contaier {
+    width: 300px;
+  }
 
-    #headerInput2{
-        width:290px;
-        height: auto;
-        margin-left: 40px;
-    }
+  #headerInput2 {
+    width: 290px;
+    height: auto;
+    margin-left: 40px;
+  }
 
-    #filterContainer{
-        width:333px;
-        margin-left: 40px;
-    }
+  #homeheaderfilterContainer {
+    width: 333px;
+    margin-left: 40px;
+  }
 }

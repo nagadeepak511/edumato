@@ -56,7 +56,7 @@ class Homesearch extends React.Component{
     }
 
     filterRestaurants = (event)=>{
-        document.getElementById('filterContainer').style.visibility = 'visible';
+        document.getElementById('homeheaderfilterContainer').style.visibility = 'visible';
         var userText = event.target.value;
         var temp = [];
         temp = this.state.restaurants.filter((restaurant)=>{
@@ -66,7 +66,7 @@ class Homesearch extends React.Component{
     }
 
     hideFilterResults = (event) =>{
-        document.getElementById('filterContainer').style.visibility = 'hidden';
+        document.getElementById('homeheaderfilterContainer').style.visibility = 'hidden';
     }
 
     render(){
@@ -78,7 +78,7 @@ class Homesearch extends React.Component{
                 </select>
                 <div id="headerInput2Container">
                     <input id="headerInput2" type="text" class="header-input" placeholder="search a restaurant" onInput={this.filterRestaurants} onBlur={this.hideFilterResults} onFocus={this.filterRestaurants}/>
-                    <div id="filterContainer">
+                    <div id="homeheaderfilterContainer">
                         {this.renderRestaurants()}
                     </div>
                 </div>

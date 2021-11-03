@@ -22,11 +22,11 @@ class Filter extends React.Component{
     render(){
         return (
             <>
-                <div class="filterContainer">
-                    <img class="filterImg" src={this.state.imgUrl} alt=""/>
-                    <div class="filterContent">
-                        <h1 class="filterContentName">{this.state.name}</h1>
-                        <h3 class="filterContentAddress">{this.state.address}</h3>
+                <div class="homeheaderfilterContainer">
+                    <img class="homeheaderfilterImg" src={this.state.imgUrl} alt=""/>
+                    <div class="homeheaderfilterContent">
+                        <h1 class="homeheaderfilterContentName">{this.state.name}</h1>
+                        <h3 class="homeheaderfilterContentAddress">{this.state.address}</h3>
                     </div>
                 </div>
             </>

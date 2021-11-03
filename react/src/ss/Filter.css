@@ -1,11 +1,11 @@
-.filterImg{
+.homeheaderfilterImg{
     height: 50px;
     aspect-ratio:1;
     border-radius:50%;
     margin: 10;
 }
 
-.filterContainer{
+.homeheaderfilterContainer{
     display:flex;
     width: 100%;
     justify-content: space-between;
@@ -18,21 +18,21 @@
     cursor:pointer;
 }
 
-.filterContent{
+.homeheaderfilterContent{
     width: 80%;
     display:flex;
     z-index:1000;
     position:relative;
 }
 
-.filterContentName{
+.homeheaderfilterContentName{
     font-size: 18px;
     text-align: left;
     color: #192f60;
     width:50%;
 }
 
-.filterContentAddress{
+.homeheaderfilterContentAddress{
     font-weight: normal;
     font-size: 14px;
     color: #8c96ab;
