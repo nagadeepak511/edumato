@@ -1,7 +1,8 @@
 import React from 'react';
 import Filter from './Filter';
+import {Link} from 'react-router-dom';
 
-var api = "https://tesla-clone-naga.herokuapp.com"
+var api = "https://edumato-naga.herokuapp.com"
 
 class Homesearch extends React.Component{
     constructor(props){
@@ -34,7 +35,7 @@ class Homesearch extends React.Component{
 
     renderRestaurants = ()=>{
         return this.state.filters.map((restaurant)=>{
-            return <Filter url={restaurant.url} name={restaurant.name} address={restaurant.address}/>
+            return <Link to={"/restaurantDetails/"+restaurant.id}><Filter url={restaurant.url} name={restaurant.name} address={restaurant.address}/></Link>
         })
     }
 
@@ -46,6 +47,7 @@ class Homesearch extends React.Component{
             var temp = [];
             data.map((restaurant)=>{
                 temp.push({
+                    id:restaurant.restaurant_id,
                     url:restaurant.restaurant_thumb,
                     name:restaurant.restaurant_name,
                     address:restaurant.address

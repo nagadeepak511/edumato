@@ -2,7 +2,7 @@ import React from 'react';
 import Homesearch from './Homesearch'
 import Category from './Category'
 
-var api = "https://tesla-clone-naga.herokuapp.com"
+var api = "https://edumato-naga.herokuapp.com"
 
 class Homeheader extends React.Component{
     constructor(props){
@@ -17,6 +17,7 @@ class Homeheader extends React.Component{
             var temp = [];
             data.map((mealtype)=>{
                 temp.push({
+                    id:mealtype.mealtype_id,
                     name:mealtype.mealtype, 
                     url:mealtype.meal_image, 
                     desc:mealtype.content
@@ -28,7 +29,7 @@ class Homeheader extends React.Component{
 
     updateImages = () =>{
         return this.state.images.map((img) => {
-            return ( <Category name={img.name} url={img.url} desc={img.desc}/> );
+            return ( <Category name={img.name} url={img.url} desc={img.desc} mealtype_id={img.id}/> );
         });
     }
     

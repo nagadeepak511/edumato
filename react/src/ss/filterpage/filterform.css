@@ -1,0 +1,100 @@
+#content-container {
+    background-color: #fbfbfb;
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#filterFormHeading {
+    font-size: 51px;
+    font-weight: bold;
+    margin-left: 8%;
+    color: #192f60;
+    margin-top: 37px;
+}
+
+#filter-container-collapse{
+    width: 80%;
+    background:white;
+    float: left;
+    margin-left: 8% !important;
+    margin-top: 27px;
+    margin-bottom: 6px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0, 0.16);
+    padding-left: 26px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #192f60;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#filter-container {
+    width: 260px;
+    height: 730px;
+    background-color: white;
+    float: left;
+    margin-left: 8% !important;
+    margin-top: 27px;
+    margin-bottom: 96px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0, 0.16);
+    padding-left: 26px;
+    padding-top: 17px;
+}
+
+#filters-heading {
+    font-size: 25px;
+    font-weight: bold;
+    color: #192f60;
+    margin-bottom: 10px;
+}
+
+.sub-heading-filters {
+    font-size: 20px;
+    color: #192f60;
+    font-weight: 500;
+}
+
+#filter-location-input {
+    height: 35px;
+    width: 208px;
+    border: 1px solid #8c96ab;
+    border-radius: 3px;
+    margin: 11px 0px 22px 1px;
+    padding: 8px 16.7px 7px 15px;
+}
+
+.filter-input-container {
+    padding-left: 3px;
+    font-size: 18px;
+    margin-top: 11px;
+}
+
+.filter-input-container > input {
+    transform: scale(1.5);
+}
+
+.filter-input-container > span {
+    margin-left: 20px;
+    color: #8c96ab;
+}
+
+#costfortwo {
+    margin-top: 27px;
+}
+
+#sort {
+    margin-top: 27px;
+}
+
+@media screen and (max-width:1240px) {
+    #filter-container{
+        margin-left: 4% !important;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    
+}

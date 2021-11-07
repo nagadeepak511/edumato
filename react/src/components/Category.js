@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class Category extends React.Component{
     constructor(props){
@@ -6,17 +7,18 @@ class Category extends React.Component{
         this.state = {
             name:"",
             url:"",
-            desc:""
+            desc:"",
+            id:""
         }
     }
 
     static getDerivedStateFromProps(props, state){
-        return {name:props.name, url:props.url, desc:props.desc};
+        return {name:props.name, url:props.url, desc:props.desc, id:props.mealtype_id};
     }
 
     render(){
         return (
-            <>
+            <Link to={"/filterpage/"+this.state.id}>
                 <div class="category">
                     <div class="category-image" style={{backgroundImage:`url(${this.state.url})`}}></div>
                     <div class="category-content-container">
@@ -24,7 +26,7 @@ class Category extends React.Component{
                         <h2 class="category-description">{this.state.desc}</h2>
                     </div>
                 </div>
-            </>
+            </Link>
         );
     }
 };

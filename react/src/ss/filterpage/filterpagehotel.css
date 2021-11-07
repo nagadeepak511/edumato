@@ -1,0 +1,104 @@
+.hotel-container {
+    width: 794px;
+    height: 291px;
+    background-color: #fff;
+    float: left;
+    margin-left: 45px;
+    margin-bottom: 34px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    z-index: -100
+}
+
+#top-hotel-container {
+    margin-top: 27px;
+}
+
+.hotel-image {
+    float: left;
+    margin-left: 41px;
+    margin-top: 31px;
+    border-radius: 20px;
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+    object-fit: contain;
+    background-image: url("");
+    background-position: center;
+}
+
+.hotel-name {
+    float: left;
+    position: absolute;
+    margin-left: 196px;
+    margin-top: 39px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #192f60;
+}
+
+.hotel-fort {
+    float: left;
+    position: absolute;
+    margin-left: 201px;
+    margin-top: 87px;
+    font-size: 16px;
+    font-weight: 500px;
+    color: #192f60;
+}
+
+.hotel-address {
+    float: left;
+    position: absolute;
+    margin-left: 201px;
+    margin-top: 115px;
+    font-size: 16px;
+    color: #8c96ab;
+}
+
+.horizontal-line {
+    float: left;
+    position: absolute;
+    margin-left: 32px;
+    width: 726.4px;
+    margin-top: 190px;
+    height: 1px;
+    background-color: #8c96ab;
+}
+
+.hotel-sub-heading {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8c96ab;
+    float: left;
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 202px;
+    width: 170px;
+}
+
+.hotel-values {
+    float:left;
+    position: absolute;
+    margin-top: 202px;
+    margin-left: 216px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #192f60;
+}
+
+.hotel-room-type{
+    width: 100%;
+    height: 25px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.hotel-ccftwo{
+    width: 100%;
+    height: 25px;
+    margin-top: -25px;
+    /*display: inline-block;*/
+    float: right;
+    overflow: hidden;
+}

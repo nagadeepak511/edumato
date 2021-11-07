@@ -1,0 +1,82 @@
+button{
+    outline: none !important;
+}
+
+#details-container-fluid{
+    background-color: #fbfbfb;
+    width: 100%;
+}
+
+#details-container{
+    padding-top: 52px;
+    width: 80%;
+    margin: auto;
+}
+
+#details-hotel-img{
+    width: 100%;
+    height: 400px;
+}
+
+#details-hotel-name{
+    margin-left:0;
+}
+
+.btn{
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn-nav{
+    background: transparent;
+}
+
+#details-nav-container{
+    margin-top:120px;
+}
+
+#details-place-order{
+    margin-top: -20px;
+    float: right;
+}
+
+.details-horizontal-line{
+    height: 4px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: -4px;
+}
+
+.details-details{
+    padding:40px;
+    padding-top: 0px;
+}
+
+.blue{
+    color: #192f60;
+}
+
+.red{
+    color: red;
+}
+
+#details-hotel-name{
+    font-weight: 900;
+}
+
+#details-hotel-address{
+    width: 359px;
+    margin-left: 0;
+}
+
+.fadedBlue{
+    color: #8c96ab;
+    font-size: 16px;
+}
+
+.details-underline-button{
+    border-bottom: 4px solid red;
+}
