@@ -70,6 +70,7 @@
     padding-left: 3px;
     font-size: 18px;
     margin-top: 11px;
+    font-weight: normal;
 }
 
 .filter-input-container > input {

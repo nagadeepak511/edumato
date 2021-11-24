@@ -13,6 +13,10 @@ class NavContainer extends React.Component{
     return {pageNumber:props.pgNo}
   }
 
+  componentDidMount(){
+    this.props.handler(1);
+  }
+
   updateHotels = (event)=>{
     this.props.handler(Number(event.target.innerHTML));
   }

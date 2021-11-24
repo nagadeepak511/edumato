@@ -38,8 +38,8 @@ class Homeheader extends React.Component{
             <>
                 <header id="homeheader">
                     <div class="header-link-container">
-                        <a href="" class="header-link">Login</a>
-                        <a href="" class="header-link" id="signup">Create an account</a>
+                        <a href="" class="header-link"  data-toggle="modal" data-target="#myModal">Login</a>
+                        <a href="" class="header-link" data-toggle="modal" data-target="#id01" id="signup">Create an account</a>
                     </div>
                     <div id="logo">
                         <h1 id="brandName">e!</h1>

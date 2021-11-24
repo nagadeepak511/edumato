@@ -5,7 +5,10 @@ class Sort extends React.Component{
         localStorage.setItem('sort','1')
     }
 
-    setSort = (event)=>{localStorage.setItem('sort',event.target.value)}
+    setSort = (event)=>{
+        localStorage.setItem('sort',event.target.value)
+        this.props.getSort()
+    }
 
     render(){
         return (

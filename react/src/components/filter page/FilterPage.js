@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
-import FilterForm from './FilterForm';
 import Header from './Header';
+import RenderRestaurants from './RenderRestaurants';
 
 var api = 'https://edumato-naga.herokuapp.com';
 class FilterPage extends Component{
@@ -16,16 +16,22 @@ class FilterPage extends Component{
     }
 
     componentDidMount(){
-        fetch(api+'/restaurants?mealtype='+this.props.match.params.mealtype)
+        fetch(api+'/restaurants?mealtype='+this.props.match.params.mealtype+`&state=${localStorage.getItem('location')}&cuisine=${localStorage.getItem('cuisine')}&sort=${localStorage.getItem('sort')}&lcost=${localStorage.getItem('cost').split(',')[0]}&hcost=${localStorage.getItem('cost').split(',')[1]}`)
         .then((res)=>{return res.json()})
-        .then((data)=>{this.setState({restaurants: data});})
+        .then((data)=>{
+            console.log(data, api+'/restaurants?mealtype='+this.props.match.params.mealtype+`&state=${localStorage.getItem('location')}&cuisine=${localStorage.getItem('cuisine')}&sort=${localStorage.getItem('sort')}&lcost=${localStorage.getItem('cost').split(',')[0]}&hcost=${localStorage.getItem('cost').split(',')[1]}`)
+            this.setState({restaurants: data});})
+    }
+
+    renderHotels = ()=>{
+        var data = this.state.restaurants
     }
 
     render(){
         return (
             <>
                 <Header/>
-                <FilterForm mealtype={this.props.match.params.mealtype} updateData={this.getRestaurants}/>               
+                <RenderRestaurants listData={this.state.restaurants} updateData={this.getRestaurants} mealtype={this.props.match.params.mealtype}/>
             </>
         );
     }
