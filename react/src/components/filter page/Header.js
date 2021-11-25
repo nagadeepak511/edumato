@@ -55,9 +55,8 @@ class Header extends Component{
         sessionStorage.removeItem('ltk');
         sessionStorage.removeItem('userData');
         console.log(this.props,"from handle logout")
-        // this.props.redirect()
+        this.props.redirect()
         // this.props.history.push('/')
-        browserHistory.push('/')
     }
 
     render(){

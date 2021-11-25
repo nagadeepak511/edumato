@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Header from './Header';
 import RenderRestaurants from './RenderRestaurants';
+import {Link} from 'react-router-dom'
 
 var api = 'https://edumato-naga.herokuapp.com';
 class FilterPage extends Component{
@@ -32,6 +33,13 @@ class FilterPage extends Component{
         var data = this.state.restaurants
     }
 
+    redirect = ()=>{
+        var r = this.state.redirect;
+        r = !r;
+        this.setState({redirect: r});
+        console.log(this.state.redirect, "from FilterPage.redirect")
+    }
+
     render(){
         return (
             <>
@@ -42,8 +50,15 @@ class FilterPage extends Component{
                         return null
                     }:null
                 }
-                <Header redirect={()=>{var r=!this.state.redirect; this.setState({redirect:r})}}/>
-                <RenderRestaurants listData={this.state.restaurants} updateData={this.getRestaurants} mealtype={this.props.match.params.mealtype}/>
+                <Header redirect={this.redirect}/>
+                {sessionStorage.getItem('ltk')?<RenderRestaurants listData={this.state.restaurants} updateData={this.getRestaurants} mealtype={this.props.match.params.mealtype}/>:(()=>{
+                    return (
+                        <div class="container">
+                            <div class="alert">Please login to proceed</div>
+                            <h1>Or go to <Link to="/">Home</Link></h1>
+                        </div>
+                    )
+                })()}
             </>
         );
     }
